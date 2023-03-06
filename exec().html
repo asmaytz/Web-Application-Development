@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions and JS</title>	
+	<script>
+		function testExec(){
+			var myRegex = /.at/;
+			var testString =  "Beware of black cats";
+			var matches = myRegex.exec(testString);
+			document.write("<p>Regular Expression:" + myRegex + "</p");
+			document.write("<p>Test String: " + testString + "</p>");
+			document.write("<p>First match: " +matches[0] + "</p>");
+			document.write("<p>Match index: "+matches.index + "</p>");
+		}
+	</script>
+</head>
+<body>	
+	<h1>Test exec()</h1>
+<script>
+	testExec();
+</script>
+</body>
+
+</html>

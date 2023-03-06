@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions and JS</title>	
+	<script>
+		function testTest(){
+			var message;
+			if (regex.test(string)){
+				message = "Passed";
+			}else{
+				message ="Failed"
+			}
+			return message;
+		}
+	</script>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Test test()</h1>
+<script>
+	var myRegex =/((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$/;
+	var good ="192.168.1.1";
+	var bad ="google.com";
+	document.write("<p>Regular Expression: " + myRegex + "</p>");
+	document.write("<p>Test 1: " +good + ": " + testTest(myRegex, good)+ "</p>");
+	document.write("<p> Test 2: " + bad + " : " +testTest(myRegex, bad) + </p>);
+</script>
+</body>
+
+</html>

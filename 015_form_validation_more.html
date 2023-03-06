@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<script>
+	 function validateForm() {
+	var lastName = document.getElementById("lastName");
+	if( lastName.value.length <= 2){
+		alert("Sorry: Last name must contian two ( 2) or more characters. ");
+		lastName.focus();
+		return false;
+	}else {
+		return true;
+	}
+}</script>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<div id="formWrapper">
+		<h1 id="title">Contact Us</h1>
+		<form name="contactForm" id="contactForm" action="submit_contact.php" method="post">
+			<div id="rowA">
+				<label for="textName">First Name (required):</label>
+				<input type="text" name="textName" id="textName" required autofocus>
+			</div>
+			<div id="rowB">
+				<label for="textName">Last Name (required):</label>
+				<input type="text" name="textName" id="textName" required autofocus>
+			</div>
+			<div id="rowC">
+				<label>Phone number (optional: 000-000-0000):</label>
+				<input type="tel" name="phoneNumber" id="phoneNumber"  pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+			</div>
+			<div id="rowD">
+				<label>E-mail address (required):</label>
+				<input type="email" name="email" id="email" required>
+			</div>
+				<div id="rowE">
+				<label>Message (required):</label>
+				<textarea name="message" id="email"  maxlength="150" row="5" required></textarea>
+			</div>
+	
+	<div id="rowE">
+		<p><input type="submit" name="submitButton" value="Submit"></p>
+	</div>
+	</form>
+</div>
+</body>
+</html>

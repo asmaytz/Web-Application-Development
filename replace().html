@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions and JS</title>	
+	<script>
+		function testReplaceFirst(inputString){
+			var text= inputString;
+			var result=text.replace("at", "ond");
+			alert(result);
+		}
+		function testReplaceAll(inputString){
+			var text = inputString;
+			var result = text.replace(/at/g, "ond");
+			alert(result);
+		}
+
+	</script>
+</head>
+<body>	
+	<h1>Test replace()</h1>
+<script>
+	testReplaceFirst("bat, cat, mat");
+	testReplaceAll("bat, cat, mat");
+</script>
+</body>
+
+</html>

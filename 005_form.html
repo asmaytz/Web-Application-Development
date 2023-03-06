@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<form name="myFirstForm" action="http://serveraddress/script.php" method="post">
+		<p>Enter your name:
+			<input type="text" name="textName">
+		</p>
+		<p>
+			<input type="radio" name="radioMessageType" value="question" checked>Question<br>
+			<input type="radio" name="radioMessageType" value="comment">Comment<br>
+			<input type="radio" name="radioMessageType" value="complaint">Complaint <br>
+		</p>
+		<p>Please enter your message:</p>
+		<p><textarea rows="5" cols="50" name="talComments"></textarea></p>
+		<p><input type="submit" name="submitButton" value="Submit"></p>
+		
+	</form>
+</body>
+</html>

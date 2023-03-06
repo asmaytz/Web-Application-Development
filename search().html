@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head>
+	<title>Regular Expressions and JS</title>	
+	<script>
+		function testsearch(regex, string){
+			var match;
+			var message;
+			if(string.search(regex) !=-1){
+				match = " matches the regular Expressions:";
+				}
+				else{
+					match=" does not match the regular experession:";
+				}
+				message = string + match + regex;
+				return message;
+		}
+	</script>
+</head>
+<body>	
+	<h1>Test search()</h1>
+<script>
+	var myRegex = /[a-z]/;
+	var good = "Joe";
+	var bad = "99";
+	document.write("<p>" + testsearch(myRegex, good) + "</p>");
+	document.write("<p>" +testsearch(myRegex, bad) + "</p>");
+</script><p>Joe matches the regular Expressions:/[a-z]/</p><p>99 does not match the regular experession:/[a-z]/</p>
+
+
+</body></html>

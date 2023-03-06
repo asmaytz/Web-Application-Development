@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions and JS</title>	
+	<script>
+		function splitString(stringToSplit, separator){
+			var arrayOfString = stringToSplit.split(separator);
+			document.write('<p> The original string is: "' + stringToSplit + '"</p>');
+			document.write('<p> The separator is: ' + separator + '</p>');
+			document.write('<p> The array has: ' + arrayOfString.length + ' elements: '+arrayOfString.join(" | ")+ '</p>');
+			document.write('<p> The first array element is: ' + arrayOfString[0] + '</p>');
+		}
+
+	</script>
+</head>
+<body>	
+	<h1>Test split()</h1>
+<script>
+	var days= "Sunday, Monday, Teusday Wednesday, Thursday, Friday, Saturday";
+	var comma = ",";
+	splitString(days, comma);
+	
+</script>
+</body>
+
+</html>
